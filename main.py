@@ -67,7 +67,7 @@ def execute():
 def setting():
     st.title("option")
     box_name = st.text_input("hight")
-    
+
     box = st.checkbox('name')
 
 
@@ -81,6 +81,8 @@ if selOption == options[0]:
     introduction()
 elif selOption == options[1]:
     execute()
+elif selOption == options[2]:
+    setting()
 
 
 
