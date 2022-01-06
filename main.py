@@ -34,9 +34,7 @@ def introduction():
 
     """)
     st.image('opencv.jpg', use_column_width=True)
-
-
-     
+    st.image_size=(300,300)
     c1, c2 = st.columns(2)
 
     c1.header("FEATURE")
@@ -67,14 +65,10 @@ def execute():
     Prosecution.
     """)
 def setting():
-    st.sidebar('hight')
-    st.sidebar('width')
-    st.sidebar('fps')
-    selectbox = st.sidebar.selectbox("select hight ,width,fps"),["hight","width","fps"]
-    st.write(f"You select{selectbox}")
-
-
-
+    st.title("option")
+    box_name = st.text_input("hight")
+    
+    box = st.checkbox('name')
 
 
 
