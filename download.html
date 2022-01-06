@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v17.8 (Yoast SEO v17.8) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Why Is Computer Vision Hard To Implement?</title>
+	<link rel="canonical" href="https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Why Is Computer Vision Hard To Implement?" />
+	<meta property="og:description" content="Computer Vision has seen rapid growth over the last few years, primarily due to deep learning which has allowed the capability to detect obstacles, segment images, or extract important context from a given scene. From the biological standpoint, computer vision strives to come up with computational models of the human visual system. From the engineering [&hellip;]" />
+	<meta property="og:url" content="https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/" />
+	<meta property="og:site_name" content="Analytics India Magazine" />
+	<meta property="article:publisher" content="https://www.facebook.com/AnalyticsIndiaMagazine" />
+	<meta property="article:published_time" content="2020-07-29T05:48:23+00:00" />
+	<meta property="article:modified_time" content="2021-02-02T10:42:20+00:00" />
+	<meta property="og:image" content="https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg" />
+	<meta property="og:image:width" content="1009" />
+	<meta property="og:image:height" content="614" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@https://twitter.com/_vishalchawla" />
+	<meta name="twitter:site" content="@Analyticsindiam" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Vishal Chawla" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="4 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://analyticsindiamag.com/#organization","name":"Analytics India Magazine","url":"https://analyticsindiamag.com/","sameAs":["https://www.facebook.com/AnalyticsIndiaMagazine","https://www.instagram.com/analyticsindiamagazine/","https://www.linkedin.com/company/analytics-india-magazine","https://www.youtube.com/channel/UCAlwrsgeJavG1vw9qSFOUmA","https://in.pinterest.com/Analyticsindiam/","https://twitter.com/Analyticsindiam"],"logo":{"@type":"ImageObject","@id":"https://analyticsindiamag.com/#logo","inLanguage":"en-US","url":"https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/Screenshot-2019-11-01-at-10.47.19-AM.png","contentUrl":"https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/Screenshot-2019-11-01-at-10.47.19-AM.png","width":1298,"height":1298,"caption":"Analytics India Magazine"},"image":{"@id":"https://analyticsindiamag.com/#logo"}},{"@type":"WebSite","@id":"https://analyticsindiamag.com/#website","url":"https://analyticsindiamag.com/","name":"Analytics India Magazine","description":"Artificial Intelligence, Machine Learning &amp; Data Science","publisher":{"@id":"https://analyticsindiamag.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://analyticsindiamag.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#primaryimage","inLanguage":"en-US","url":"https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg","contentUrl":"https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg","width":1009,"height":614},{"@type":"WebPage","@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#webpage","url":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/","name":"Why Is Computer Vision Hard To Implement?","isPartOf":{"@id":"https://analyticsindiamag.com/#website"},"primaryImageOfPage":{"@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#primaryimage"},"datePublished":"2020-07-29T05:48:23+00:00","dateModified":"2021-02-02T10:42:20+00:00","breadcrumb":{"@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/"]}]},{"@type":"BreadcrumbList","@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://analyticsindiamag.com/"},{"@type":"ListItem","position":2,"name":"Why Is Computer Vision Hard To Implement?"}]},{"@type":"Article","@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#article","isPartOf":{"@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#webpage"},"author":{"@id":"https://analyticsindiamag.com/#/schema/person/6657c718a667fc6e517fa2529c3fb794"},"headline":"Why Is Computer Vision Hard To Implement?","datePublished":"2020-07-29T05:48:23+00:00","dateModified":"2021-02-02T10:42:20+00:00","mainEntityOfPage":{"@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#webpage"},"wordCount":844,"publisher":{"@id":"https://analyticsindiamag.com/#organization"},"image":{"@id":"https://analyticsindiamag.com/why-is-computer-vision-hard-to-implement/#primaryimage"},"thumbnailUrl":"https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg","keywords":["computer vision","computer vision autonomous vehicles","computer vision future","computer vision neural network"],"articleSection":["Opinions"],"inLanguage":"en-US","copyrightYear":"2020","copyrightHolder":{"@id":"https://analyticsindiamag.com/#organization"}},{"@type":"Person","@id":"https://analyticsindiamag.com/#/schema/person/6657c718a667fc6e517fa2529c3fb794","name":"Vishal Chawla","image":{"@type":"ImageObject","@id":"https://analyticsindiamag.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/f509608a7878db37f140ac89521a8e9b?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/f509608a7878db37f140ac89521a8e9b?s=96&d=mm&r=g","caption":"Vishal Chawla"},"description":"Vishal Chawla is a senior tech journalist at Analytics India Magazine and writes about AI, data analytics, cybersecurity, cloud computing, and blockchain. Vishal also hosts AIM's video podcast called Simulated Reality- featuring tech leaders, AI experts, and innovative startups of India.","sameAs":["https://www.linkedin.com/in/vishalchawla9","https://twitter.com/https://twitter.com/_vishalchawla"],"url":"https://analyticsindiamag.com/author/vishal-chawlaanalyticsindiamag-com/"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//a.omappapi.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Analytics India Magazine &raquo; Feed" href="https://analyticsindiamag.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Analytics India Magazine &raquo; Comments Feed" href="https://analyticsindiamag.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Analytics India Magazine &raquo; Stories Feed" href="https://analyticsindiamag.com/web-stories/feed/">		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.3.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=UA-31923780-1"  type="text/javascript" data-cfasync="false" data-wpfc-render="false" async></script>
+			<script type="text/javascript" data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '8.3.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStrs = [
+										'ga-disable-G-DBT1K2ZKHY',
+															'ga-disable-UA-31923780-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						if ( document.cookie.indexOf( disableStrs[ index ] + '=true' ) > -1 ) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						document.cookie = disableStrs[ index ] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if ( mi_track_user ) {
+					function __gtagDataLayer() {
+						dataLayer.push( arguments );
+					}
+
+					function __gtagTracker( type, name, parameters ) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply( null, arguments );
+							return;
+						}
+
+						if ( type === 'event' ) {
+															parameters.send_to = monsterinsights_frontend.v4_id;
+								var hookName = name;
+								if ( typeof parameters[ 'event_category' ] !== 'undefined' ) {
+									hookName = parameters[ 'event_category' ] + ':' + name;
+								}
+
+								if ( typeof MonsterInsightsDualTracker.trackers[ hookName ] !== 'undefined' ) {
+									MonsterInsightsDualTracker.trackers[ hookName ]( parameters );
+								} else {
+									__gtagDataLayer( 'event', name, parameters );
+								}
+							
+															parameters.send_to = monsterinsights_frontend.ua;
+								__gtagDataLayer( type, name, parameters );
+													} else {
+							__gtagDataLayer.apply( null, arguments );
+						}
+					}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dZGIzZG' : true,
+											} );
+										__gtagTracker( 'config', 'G-DBT1K2ZKHY', {"forceSSL":"true","link_attribution":"true"} );
+															__gtagTracker( 'config', 'UA-31923780-1', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;											(function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+																				if ( ! ( ! args.hasOwnProperty(arg) || ! gaMap.hasOwnProperty(arg) ) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						})();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/analyticsindiamag.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://149695847.v2.pressablecdn.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hello-elementor-css'  href='https://149695847.v2.pressablecdn.com/wp-content/themes/hello-elementor/style.min.css?ver=2.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css'  href='https://149695847.v2.pressablecdn.com/wp-content/themes/hello-elementor/theme.min.css?ver=2.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-10056211-css'  href='https://149695847.v2.pressablecdn.com/wp-content/uploads/elementor/css/post-10056211.css?ver=1640749763' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-pro-css'  href='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='https://149695847.v2.pressablecdn.com/wp-content/uploads/elementor/css/global.css?ver=1640749763' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-10056252-css'  href='https://149695847.v2.pressablecdn.com/wp-content/uploads/elementor/css/post-10056252.css?ver=1641185149' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-10056274-css'  href='https://149695847.v2.pressablecdn.com/wp-content/uploads/elementor/css/post-10056274.css?ver=1640749764' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-10056299-css'  href='https://149695847.v2.pressablecdn.com/wp-content/uploads/elementor/css/post-10056299.css?ver=1641202182' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAnton%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CTinos%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRubik%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.2' type='text/css' media='all' />
+<script type='text/javascript' id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/analyticsindiamag.com","hash_tracking":"false","ua":"UA-31923780-1","v4_id":"G-DBT1K2ZKHY"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.3.0' id='monsterinsights-frontend-script-js'></script>
+<link rel="https://api.w.org/" href="https://analyticsindiamag.com/wp-json/" /><link rel="alternate" type="application/json" href="https://analyticsindiamag.com/wp-json/wp/v2/posts/10003537" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://analyticsindiamag.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://analyticsindiamag.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://analyticsindiamag.com/?p=10003537' />
+<link rel="alternate" type="application/json+oembed" href="https://analyticsindiamag.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fanalyticsindiamag.com%2Fwhy-is-computer-vision-hard-to-implement%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://analyticsindiamag.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fanalyticsindiamag.com%2Fwhy-is-computer-vision-hard-to-implement%2F&#038;format=xml" />
+<meta property="fb:app_id" content="224833517628762" />      <meta name="onesignal" content="wordpress-plugin"/>
+            <script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
+        OneSignal.setDefaultNotificationUrl("https://analyticsindiamag.com");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = 'a072af21-bf5c-42cf-9539-cd7a4a2fec7d';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['disable'] = true;
+oneSignal_options['path'] = "https://analyticsindiamag.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.48d9c6a2-4943-4221-b17b-a4e235bf1c7d";
+oneSignal_options['persistNotification'] = true;
+oneSignal_options['promptOptions'] = { };
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showNativePrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<link rel="icon" href="https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/cropped-aim-new-logo-1-22-3-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/cropped-aim-new-logo-1-22-3-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/cropped-aim-new-logo-1-22-3-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/cropped-aim-new-logo-1-22-3-270x270.jpg" />
+</head>
+<body class="post-template-default single single-post postid-10003537 single-format-standard wp-custom-logo elementor-default elementor-kit-10056211 elementor-page-10056299">
+
+		<div data-elementor-type="header" data-elementor-id="10056252" class="elementor elementor-10056252 elementor-location-header" data-elementor-settings="[]">
+		<div class="elementor-section-wrap">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-7ba474b elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ba474b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7093891" data-id="7093891" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fbf8982 elementor-widget elementor-widget-image" data-id="fbf8982" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.3 - 28-12-2021 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>													<a href="https://ad.doubleclick.net/ddm/trackclk/N418801.2790902ANALYTICSINDIA/B26960696.324376598;dc_trk_aid=516662817;dc_trk_cid=163764071;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" data-wpel-link="external" target="_blank" rel="nofollow">
+							<img width="800" height="74" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Q4_MR_AI_Certification_970x90_Opt1-copy.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Q4_MR_AI_Certification_970x90_Opt1-copy.jpg 970w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Q4_MR_AI_Certification_970x90_Opt1-copy-768x71.jpg 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Q4_MR_AI_Certification_970x90_Opt1-copy-150x14.jpg 150w " sizes="(max-width: 800px) 100vw, 800px" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<header class="elementor-section elementor-top-section elementor-element elementor-element-6e47db1d elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6e47db1d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+						<div class="elementor-container elementor-column-gap-narrow">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-67a58cdf" data-id="67a58cdf" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-49217837 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="49217837" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+																<a href="https://analyticsindiamag.com" data-wpel-link="internal">
+							<img width="2033" height="884" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/AIM-logo-black.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/AIM-logo-black.png 2033w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/AIM-logo-black-1024x445.png 1024w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/AIM-logo-black-768x334.png 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/AIM-logo-black-1536x668.png 1536w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/AIM-logo-black-150x65.png 150w " sizes="(max-width: 2033px) 100vw, 2033px" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-20e9f41b" data-id="20e9f41b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4a849b4 elementor-widget elementor-widget-image" data-id="4a849b4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://ad.doubleclick.net/ddm/trackclk/N418801.2790902ANALYTICSINDIA/B26969239.324220923;dc_trk_aid=516517998;dc_trk_cid=163678007;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" data-wpel-link="external" target="_blank" rel="nofollow">
+							<img width="728" height="90" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/728x90_bnst_deploy-AI-from-edge-to-cloud_na_in_eng_OpenVino-DisplayAd-Static-2.jpeg" class="attachment-full size-full" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/728x90_bnst_deploy-AI-from-edge-to-cloud_na_in_eng_OpenVino-DisplayAd-Static-2.jpeg 728w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/728x90_bnst_deploy-AI-from-edge-to-cloud_na_in_eng_OpenVino-DisplayAd-Static-2-150x19.jpeg 150w " sizes="(max-width: 728px) 100vw, 728px" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</header>
+				<header class="elementor-section elementor-top-section elementor-element elementor-element-def0302 elementor-section-content-middle elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="def0302" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_range&quot;:&quot;page&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}">
+						<div class="elementor-container elementor-column-gap-narrow">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8b8c67e" data-id="8b8c67e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2b680ba elementor-nav-menu__align-center elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="2b680ba" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">			<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-2b680ba" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59651"><a href="https://analyticsindiamag.com/about/" class="elementor-item" data-wpel-link="internal">Who we are</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59658"><a href="https://analyticsindiamag.com/advertise-with-us/" class="elementor-item" data-wpel-link="internal">Advertise</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10017492"><a href="https://recruits.analyticsindiamag.com/" class="elementor-item" data-wpel-link="internal">Hiring Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21287"><a href="https://analyticsindiamag.com/our-events/" class="elementor-item" data-wpel-link="internal">Conferences</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19568"><a href="https://www.youtube.com/channel/UCAlwrsgeJavG1vw9qSFOUmA?sub_confirmation=1" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Videos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22638"><a href="https://www.machinehack.com/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Hackathons</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-47956"><a href="https://analyticsindiamag.com/category/academic-rankings/" class="elementor-item" data-wpel-link="internal">Academic Rankings</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050290"><a href="https://councils.analyticsindiamag.com/" class="elementor-item" data-wpel-link="internal">Council</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050289"><a href="https://machinehack.com/jobs" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Jobs</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18432"><a href="https://analyticsindiamag.com/contact-us/" class="elementor-item" data-wpel-link="internal">Contact us</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-2b680ba" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59651"><a href="https://analyticsindiamag.com/about/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Who we are</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59658"><a href="https://analyticsindiamag.com/advertise-with-us/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Advertise</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10017492"><a href="https://recruits.analyticsindiamag.com/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Hiring Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21287"><a href="https://analyticsindiamag.com/our-events/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Conferences</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19568"><a href="https://www.youtube.com/channel/UCAlwrsgeJavG1vw9qSFOUmA?sub_confirmation=1" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Videos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22638"><a href="https://www.machinehack.com/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Hackathons</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-47956"><a href="https://analyticsindiamag.com/category/academic-rankings/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Academic Rankings</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050290"><a href="https://councils.analyticsindiamag.com/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Council</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050289"><a href="https://machinehack.com/jobs" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Jobs</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18432"><a href="https://analyticsindiamag.com/contact-us/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Contact us</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7c578ff" data-id="7c578ff" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7d43f5e elementor-search-form--skin-full_screen elementor-widget elementor-widget-search-form" data-id="7d43f5e" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+					<form class="elementor-search-form" role="search" action="https://analyticsindiamag.com" method="get">
+									<div class="elementor-search-form__toggle">
+				<div class="e-font-icon-svg-container"><svg aria-hidden="true" class="e-font-icon-svg e-fas-search"><use xlink:href="#fas-search" /></svg></div>				<span class="elementor-screen-only">Search</span>
+			</div>
+						<div class="elementor-search-form__container">
+								<input placeholder="Search..." class="elementor-search-form__input" type="search" name="s" title="Search" value="">
+																<div class="dialog-lightbox-close-button dialog-close-button">
+					<svg aria-hidden="true" class="e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>					<span class="elementor-screen-only">Close</span>
+				</div>
+							</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</header>
+				</div>
+		</div>
+				<div data-elementor-type="single-post" data-elementor-id="10056299" class="elementor elementor-10056299 elementor-location-single post-10003537 post type-post status-publish format-standard has-post-thumbnail hentry category-articles tag-computer-vision tag-computer-vision-autonomous-vehicles tag-computer-vision-future tag-computer-vision-neural-network" data-elementor-settings="[]">
+		<div class="elementor-section-wrap">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-1239f304 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="1239f304" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-647fdc49" data-id="647fdc49" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2deba64 elementor-widget elementor-widget-image" data-id="2deba64" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://praxis.ac.in/data-science-program/?utm_source=AnalyticsIndiaMagazine&#038;utm_medium=banner&#038;utm_campaign=PAT2021" data-wpel-link="external" target="_blank" rel="nofollow">
+							<img width="728" height="90" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/728x90-Jan-08.gif" class="attachment-large size-large" alt="" loading="lazy" />								</a>
+															</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-77abf4f elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="77abf4f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d2567a3" data-id="d2567a3" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4d316ad" data-id="4d316ad" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-80753d8 elementor-align-left elementor-widget elementor-widget-post-info" data-id="80753d8" data-element_type="widget" data-widget_type="post-info.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.3 - 28-12-2021 */
+.elementor-widget.elementor-icon-list--layout-inline .elementor-widget-container{overflow:hidden}.elementor-widget .elementor-icon-list-items.elementor-inline-items{margin-right:-8px;margin-left:-8px}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-right:8px;margin-left:8px}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{width:auto;left:auto;right:auto;position:relative;height:100%;border-top:0;border-bottom:0;border-right:0;border-left-width:1px;border-style:solid;right:-8px}.elementor-widget .elementor-icon-list-items{list-style-type:none;margin:0;padding:0}.elementor-widget .elementor-icon-list-item{margin:0;padding:0;position:relative}.elementor-widget .elementor-icon-list-item:after{position:absolute;bottom:0;width:100%}.elementor-widget .elementor-icon-list-item,.elementor-widget .elementor-icon-list-item a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:inherit}.elementor-widget .elementor-icon-list-icon+.elementor-icon-list-text{-ms-flex-item-align:center;align-self:center;padding-left:5px}.elementor-widget .elementor-icon-list-icon{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget .elementor-icon-list-icon svg{width:var(--e-icon-list-icon-size,1em);height:var(--e-icon-list-icon-size,1em)}.elementor-widget .elementor-icon-list-icon i{width:1.25em;font-size:var(--e-icon-list-icon-size)}.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon{text-align:var(--e-icon-list-icon-align)}.elementor-widget.elementor-widget-icon-list .elementor-icon-list-icon svg{margin:var(--e-icon-list-icon-margin,0 calc(var(--e-icon-list-icon-size, 1em) * .25) 0 0)}.elementor-widget.elementor-list-item-link-full_width a{width:100%}.elementor-widget.elementor-align-center .elementor-icon-list-item,.elementor-widget.elementor-align-center .elementor-icon-list-item a{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-align-center .elementor-inline-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-align-left .elementor-icon-list-item,.elementor-widget.elementor-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-align-left .elementor-inline-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-align-right .elementor-icon-list-item,.elementor-widget.elementor-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget.elementor-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget:not(.elementor-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-align-left) .elementor-icon-list-item:after{right:0}@media (max-width:1024px){.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item a,.elementor-widget.elementor-tablet-align-center .elementor-icon-list-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-tablet-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-tablet-align-left .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-tablet-align-left .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-tablet-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-tablet-align-right .elementor-icon-list-item,.elementor-widget.elementor-tablet-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget:not(.elementor-tablet-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-tablet-align-left) .elementor-icon-list-item:after{right:0}}@media (max-width:767px){.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item a,.elementor-widget.elementor-mobile-align-center .elementor-icon-list-items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-widget.elementor-mobile-align-center .elementor-icon-list-item:after{margin:auto}.elementor-widget.elementor-mobile-align-left .elementor-icon-list-items{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.elementor-widget.elementor-mobile-align-left .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-left .elementor-icon-list-item a{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:left}.elementor-widget.elementor-mobile-align-right .elementor-icon-list-items{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.elementor-widget.elementor-mobile-align-right .elementor-icon-list-item,.elementor-widget.elementor-mobile-align-right .elementor-icon-list-item a{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:right}.elementor-widget:not(.elementor-mobile-align-right) .elementor-icon-list-item:after{left:0}.elementor-widget:not(.elementor-mobile-align-left) .elementor-icon-list-item:after{right:0}}</style>		<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
+								<li class="elementor-icon-list-item elementor-repeater-item-5b276ce elementor-inline-item" itemprop="datePublished">
+													<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-date">
+							<span class="elementor-post-info__item-prefix">Published on</span>
+										July 29, 2020					</span>
+								</li>
+				<li class="elementor-icon-list-item elementor-repeater-item-7ceda99 elementor-inline-item" itemprop="about">
+										<span class="elementor-icon-list-icon">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fas-tags"><use xlink:href="#fas-tags" /></svg>							</span>
+									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-terms">
+							<span class="elementor-post-info__item-prefix">In </span>
+										<span class="elementor-post-info__terms-list">
+				<a href="https://analyticsindiamag.com/category/articles/" class="elementor-post-info__terms-list-item" data-wpel-link="internal">Opinions</a>				</span>
+					</span>
+								</li>
+				</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-38c30100 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="38c30100" data-element_type="widget" data-widget_type="theme-post-title.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Why Is Computer Vision Hard To Implement?</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5939d06 elementor-align-left elementor-widget elementor-widget-post-info" data-id="5939d06" data-element_type="widget" data-widget_type="post-info.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
+								<li class="elementor-icon-list-item elementor-repeater-item-8e0fe7c elementor-inline-item" itemprop="author">
+						<a href="https://analyticsindiamag.com/author/vishal-chawlaanalyticsindiamag-com/" data-wpel-link="internal">
+											<span class="elementor-icon-list-icon">
+								<svg aria-hidden="true" class="e-font-icon-svg e-far-user-circle"><use xlink:href="#far-user-circle" /></svg>							</span>
+									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-author">
+							<span class="elementor-post-info__item-prefix">By </span>
+										Vishal Chawla					</span>
+									</a>
+				</li>
+				</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7cd3e01c elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="7cd3e01c" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
+				<div class="elementor-widget-container">
+															<img width="1009" height="614" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 370w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 800w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 20w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 185w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 740w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 400w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 79w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/07/computer-vision-implement.jpg 1009w " sizes="(max-width: 1009px) 100vw, 1009px" />															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1d2c8d7" data-id="1d2c8d7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6cddab3 elementor-widget elementor-widget-image" data-id="6cddab3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="2240" height="1260" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Blue-and-Monochrome-Cats-9-Panel-Grid-Flyer.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Blue-and-Monochrome-Cats-9-Panel-Grid-Flyer.png 2240w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Blue-and-Monochrome-Cats-9-Panel-Grid-Flyer-1024x576.png 1024w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Blue-and-Monochrome-Cats-9-Panel-Grid-Flyer-768x432.png 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Blue-and-Monochrome-Cats-9-Panel-Grid-Flyer-1536x864.png 1536w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Blue-and-Monochrome-Cats-9-Panel-Grid-Flyer-2048x1152.png 2048w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Blue-and-Monochrome-Cats-9-Panel-Grid-Flyer-150x84.png 150w " sizes="(max-width: 2240px) 100vw, 2240px" />															</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4ff3bff0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4ff3bff0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2a257515" data-id="2a257515" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<section class="elementor-section elementor-inner-section elementor-element elementor-element-4bd28dc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4bd28dc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d2b80ba" data-id="d2b80ba" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4ade7ca" data-id="4ade7ca" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4dc5d005 elementor-widget elementor-widget-theme-post-content" data-id="4dc5d005" data-element_type="widget" data-widget_type="theme-post-content.default">
+				<div class="elementor-widget-container">
+			
+<p>Computer Vision has seen rapid growth over the last few years, primarily due to deep learning which has allowed the capability to detect obstacles, segment images, or extract important context from a given scene. From the biological standpoint, computer vision strives to come up with computational models of the human visual system. From the engineering point of view, computer vision’s goal is to create autonomous systems which could perform some of the tasks which the human visual system can perform and even surpass it in many cases. But computer vision is an incredibly complex thing to bring to achieve.</p>
+
+
+
+<p>For example, a few of the most fundamental difficulties in computer vision can be recognised as how to extract and represent the vast amount of human experience in a computer in such a manner that retrieval is easy, and needs enormous amount of computation to perform tasks such as face recognition or autonomous driving in real-time, and more.</p><pre class="wp-block-preformatted" style='box-sizing: inherit; font-family: "courier 10 pitch", Courier, monospace; font-size: 0.9375rem; overflow: auto; margin: 0px 0px 1.6em; padding: 1.6em; background: rgb(238, 238, 238); line-height: 1.6; max-width: 100%; white-space: pre-wrap; color: rgb(10, 10, 10); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'><a data-wpel-link="external" href="https://machinehack.com/hackathon/uhack_sentiments_20_decode_code_words/overview" rel="noopener noreferrer nofollow" style="box-sizing: inherit; background-color: transparent; line-height: inherit; color: rgb(10, 10, 10); text-decoration: underline; cursor: pointer; transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s; -webkit-tap-highlight-color: transparent;" target="_blank"><span style='box-sizing: inherit; font-size: 19px; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;'><strong style="box-sizing: inherit; font-weight: 700; line-height: inherit;">Participate in our ML Hackathon>></strong></span></a></pre>
+
+
+
+<p><strong>How Hard Can A Vision Task Be In Areas Like Autonomous Driving?&nbsp;</strong></p>
+
+
+
+<p>Researchers have been working to understand the vision and the knowledge base required to bring autonomous vehicles to life. Tesla is working on something called <a href="https://analyticsindiamag.com/teslas-mad-max-autopilot-is-to-driving-what-jarvis-is-to-iron-man/" data-wpel-link="internal">Autopilot</a> which is primarily a vision-based system, involving a multi-task neural network. While other technologies might help self-driving vehicles to recognise and avoid obstacles, computer vision helps them to read road signs and follow traffic rules for maximum safety. So, can driving be converted into purely a vision problem and solved with machine learning techniques?&nbsp;</p>
+
+
+
+<p>Jitendra Malik, a renowned computer vision expert, says that he is optimistic about fully autonomous driving in the near future. According to him, there will be 0.01% of cases where quite sophisticated cognitive reasoning is called for. Making mistakes when you are driving sixty miles per hour could potentially kill somebody.</p>
+
+
+
+<p>According to Malik, most of what we do in vision is done unconsciously or subconsciously. That effortlessness gives us the sense that this must be very easy to implement on a computer. “If you go into the neuroscience of computer vision, then the complexity becomes clear. A large part of the cerebral cortex is dedicated to vision processing. The reality is way more complex than imagined,” he said recently in an <a href="https://www.youtube.com/watch?v=LRYkH-fAVGE" data-wpel-link="external" target="_blank" rel="nofollow">interview</a> with Lex Fridman.&nbsp;</p>
+
+
+
+<p><strong>Machines See Numbers Not Images</strong></p>
+
+
+
+<p>One of the other reasons why computer vision is challenging is that when machines see images, they see them as numbers that represent individual pixels. Whereas humans perceive photos as objects, in a highly visual and intuitive manner. It is certainly difficult for machines to process all that data when training a computer vision model. On top of that, making the machines do complex visual tasks is even more challenging in terms of the required computing and data resources.&nbsp;</p>
+
+
+
+<p>According to Malik, there are subsets of the vision-based driving problem which are very solvable like during freeway conditions. But autonomous driving must work in all conditions, no matter what. So, that may need predictive models of behaviours of pedestrians on the road and other <a href="https://analyticsindiamag.com/the-reality-about-object-detection-as-a-computer-vision-task/" data-wpel-link="internal">agents</a>, which can be incredibly complicated. For example, the system may need a high-level cognitive understanding of what a typical cyclist does, and act accordingly in advance. But the typical behaviour of a cyclist may differ from a pedestrian. Meaning current computer vision systems need far more data than humans do for learning those same capabilities. If we compare this to humans, one may see that we are natural experts at the tasks involving complex computer vision tasks like riding a bike or driving a car.&nbsp;</p>
+
+
+
+<p><strong>Static Image Vs Video Computer Vision</strong></p>
+
+
+
+<p>Researchers have been focusing heavily on single <a href="https://analyticsindiamag.com/what-is-the-difference-between-computer-vision-and-image-processing/" data-wpel-link="internal">image processing</a>. Historically, you have to understand the restrictions of computational capabilities we have had. Many of the choices made in the computer vision community through the decades can be understood as choices forced upon them by the lack of computing resources. This led to focusing extensively on single images rather than video.&nbsp;</p>
+
+
+
+<p>While today, there are no computational problems, and the need for single image computer vision can be achieved quite comfortably. But video is still understudied because video computation is still quite challenging. You can still train large neural networks with relatively larger video datasets compared to the 90s, but if you want to operate at the scale of all the content on YouTube, it is very challenging.&nbsp;</p>
+
+
+
+<p>According to Malik, long-range video understanding is one of the problems of computer vision. He says if you have a video clip and you want to understand the behaviour in terms of agents, their goals, intentionality, and make predictions about what might happen, it is quite challenging. “In the short-range of computer vision, it is only about detecting whether a person is sitting or standing. This is something that we can do right now. But in terms of long-range video understanding, I don’t think we can do today, as it blends into cognition, and that’s the reason why it’s challenging,” Malik <a href="https://www.youtube.com/watch?v=LRYkH-fAVGE" data-wpel-link="external" target="_blank" rel="nofollow">told</a> Lex Fridman.</p>
+<!-- AI CONTENT END 2 -->
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-8f8b401 elementor-widget elementor-widget-facebook-comments" data-id="8f8b401" data-element_type="widget" data-widget_type="facebook-comments.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.5.2 - 28-11-2021 */
+.elementor-facebook-widget.fb_iframe_widget,.elementor-facebook-widget.fb_iframe_widget span{width:100%!important}.elementor-facebook-widget.fb_iframe_widget iframe{position:relative;width:100%!important}.elementor-facebook-widget.fb-like{height:1px}.elementor-widget-facebook-comments iframe{width:100%!important}</style>		<div class="elementor-facebook-widget fb-comments" data-href="https://analyticsindiamag.com?p=10003537" data-width="100%" data-numposts="10" data-order-by="time" style="min-height: 1px"></div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-99765c5" data-id="99765c5" data-element_type="column">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f54b4fe" data-id="f54b4fe" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8759825 elementor-widget elementor-widget-image" data-id="8759825" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://business.louisville.edu/learnmore/msba-india/?utm_campaign=MSBA-INDIA&#038;utm_source=analyticsindia&#038;utm_medium=display&#038;utm_keyword=analyticsindia&#038;utm_content=GetPaid" data-wpel-link="external" target="_blank" rel="nofollow">
+							<img width="300" height="250" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/INDIAMSBA-GETPAID300x250.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/INDIAMSBA-GETPAID300x250.jpg 300w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/INDIAMSBA-GETPAID300x250-20x17.jpg 20w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/INDIAMSBA-GETPAID300x250-185x154.jpg 185w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/11/INDIAMSBA-GETPAID300x250-58x48.jpg 58w " sizes="(max-width: 300px) 100vw, 300px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-9955f1b elementor-widget elementor-widget-image" data-id="9955f1b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://mlds.analyticsindiasummit.com/" data-wpel-link="external" target="_blank" rel="nofollow">
+							<img width="301" height="701" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/MLDS-2020-different-size-with-fractol-07.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/MLDS-2020-different-size-with-fractol-07.jpg 301w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/MLDS-2020-different-size-with-fractol-07-150x349.jpg 150w " sizes="(max-width: 301px) 100vw, 301px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-b8fa34e elementor-widget elementor-widget-heading" data-id="b8fa34e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.3 - 28-12-2021 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-large">MORE STORIES</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-71b6de2 elementor-grid-1 elementor-posts--thumbnail-none elementor-posts--align-left elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-posts" data-id="71b6de2" data-element_type="widget" data-settings="{&quot;cards_columns&quot;:&quot;1&quot;,&quot;cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;cards_columns_tablet&quot;:&quot;2&quot;,&quot;cards_columns_mobile&quot;:&quot;1&quot;,&quot;cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.cards">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css">		<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-12671 post type-post status-publish format-standard has-post-thumbnail hentry category-articles tag-earth tag-hollywood tag-lunar-surface tag-movies tag-pixar tag-robots-india tag-sci-fi-drama-india tag-ship tag-star-wars">
+			<div class="elementor-post__card">
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/10-robots-hollywood-make-us-wish-real/" data-wpel-link="internal">
+				Which 10 Robots from Hollywood make us wish they were for real?			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-25040 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-artificial-intelligence tag-digital-data-health tag-disha tag-healthcare tag-internet-of-things tag-wearable-devices">
+			<div class="elementor-post__card">
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/india-digital-data-healthcare-sector-disha/" data-wpel-link="internal">
+				Indian Health Ministry Proposes Law To Govern Data Security In Healthcare Sector			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-56959 post type-post status-publish format-standard has-post-thumbnail hentry category-developers_corner tag-anime-open-source-projects tag-anime-projects tag-pygame">
+			<div class="elementor-post__card">
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/top-7-anime-based-open-source-projects/" data-wpel-link="internal">
+				Top 7 Anime Based Open-Source Projects			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-10047510 post type-post status-publish format-standard has-post-thumbnail hentry category-interviews tag-ankit-mathuria-cto-oyo tag-ankit-mathuria-oyo tag-artificial-intelligence tag-hospitality-startup-news tag-oyo tag-oyo-in-india tag-oyo-news tag-oyo-startup tag-oyo-unicorn tag-oyo-uses-ai tag-tech-at-oyo">
+			<div class="elementor-post__card">
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/hospitality-unicorn-oyo-has-rooms-for-ai-to-lead-tech-race/" data-wpel-link="internal">
+				Hospitality Unicorn OYO Has Room For AI To Lead Tech Race			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-68922 post type-post status-publish format-standard has-post-thumbnail hentry category-articles tag-pharmacovigilance-ai">
+			<div class="elementor-post__card">
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/how-can-ai-transform-pharmacovigilance-and-monitor-safety-of-medicinal-products/" data-wpel-link="internal">
+				How Can AI Transform Pharmacovigilance And Monitor Safety Of Medicinal Products			</a>
+		</h3>
+				</div>
+					</div>
+		</article>
+				</div>
+
+
+		
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7889cca0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7889cca0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2b61a8dd" data-id="2b61a8dd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-1f80edb elementor-author-box--avatar-yes elementor-author-box--name-yes elementor-author-box--biography-yes elementor-widget elementor-widget-author-box" data-id="1f80edb" data-element_type="widget" data-widget_type="author-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-author-box">
+							<a href="https://analyticsindiamag.com/author/vishal-chawlaanalyticsindiamag-com/" class="elementor-author-box__avatar" data-wpel-link="internal">
+					<img src="https://secure.gravatar.com/avatar/f509608a7878db37f140ac89521a8e9b?s=300&amp;d=mm&amp;r=g" alt="Vishal Chawla">
+				</a>
+			
+			<div class="elementor-author-box__text">
+									<a href="https://analyticsindiamag.com/author/vishal-chawlaanalyticsindiamag-com/" data-wpel-link="internal">
+						<h4 class="elementor-author-box__name">
+							Vishal Chawla						</h4>
+					</a>
+				
+									<div class="elementor-author-box__bio">
+						Vishal Chawla is a senior tech journalist at Analytics India Magazine and writes about AI, data analytics, cybersecurity, cloud computing, and blockchain. Vishal also hosts AIM's video podcast called Simulated Reality- featuring tech leaders, AI experts, and innovative startups of India.					</div>
+				
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-46c0c321" data-id="46c0c321" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3331e147 elementor-widget elementor-widget-heading" data-id="3331e147" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Share:</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-46c0c236 elementor-share-buttons--skin-framed elementor-share-buttons--align-right elementor-share-buttons-mobile--align-center elementor-share-buttons--view-icon elementor-share-buttons--shape-circle elementor-grid-0 elementor-share-buttons--color-official elementor-widget elementor-widget-share-buttons" data-id="46c0c236" data-element_type="widget" data-widget_type="share-buttons.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css">		<div class="elementor-grid">
+								<div class="elementor-grid-item">
+						<div class="elementor-share-btn elementor-share-btn_facebook">
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-facebook"><use xlink:href="#fab-facebook" /></svg>								<span
+									class="elementor-screen-only">Share on facebook</span>
+							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div class="elementor-share-btn elementor-share-btn_twitter">
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-twitter"><use xlink:href="#fab-twitter" /></svg>								<span
+									class="elementor-screen-only">Share on twitter</span>
+							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div class="elementor-share-btn elementor-share-btn_linkedin">
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-linkedin"><use xlink:href="#fab-linkedin" /></svg>								<span
+									class="elementor-screen-only">Share on linkedin</span>
+							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div class="elementor-share-btn elementor-share-btn_reddit">
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-reddit"><use xlink:href="#fab-reddit" /></svg>								<span
+									class="elementor-screen-only">Share on reddit</span>
+							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div class="elementor-share-btn elementor-share-btn_pinterest">
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-pinterest"><use xlink:href="#fab-pinterest" /></svg>								<span
+									class="elementor-screen-only">Share on pinterest</span>
+							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div class="elementor-share-btn elementor-share-btn_telegram">
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-telegram"><use xlink:href="#fab-telegram" /></svg>								<span
+									class="elementor-screen-only">Share on telegram</span>
+							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div class="elementor-share-btn elementor-share-btn_whatsapp">
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fab-whatsapp"><use xlink:href="#fab-whatsapp" /></svg>								<span
+									class="elementor-screen-only">Share on whatsapp</span>
+							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div class="elementor-share-btn elementor-share-btn_email">
+															<span class="elementor-share-btn__icon">
+								<svg class="e-font-icon-svg e-fas-envelope"><use xlink:href="#fas-envelope" /></svg>								<span
+									class="elementor-screen-only">Share on email</span>
+							</span>
+																				</div>
+					</div>
+						</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-18809ed9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="18809ed9" data-element_type="section">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5119f06e" data-id="5119f06e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-422cb9ff elementor-widget-divider--view-line_text elementor-widget-divider--element-align-right elementor-widget elementor-widget-divider" data-id="422cb9ff" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.3 - 28-12-2021 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);-ms-flex-negative:0;flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+							<span class="elementor-divider__text elementor-divider__element">
+				On Key				</span>
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f30e076 elementor-widget elementor-widget-heading" data-id="f30e076" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Related Posts</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-14ea996a elementor-grid-5 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-posts--show-avatar elementor-card-shadow-yes elementor-posts__hover-gradient elementor-widget elementor-widget-posts" data-id="14ea996a" data-element_type="widget" data-settings="{&quot;cards_columns&quot;:&quot;5&quot;,&quot;cards_columns_tablet&quot;:&quot;2&quot;,&quot;cards_columns_mobile&quot;:&quot;1&quot;,&quot;cards_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]},&quot;cards_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;cards_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.cards">
+				<div class="elementor-widget-container">
+					<div class="elementor-posts-container elementor-posts elementor-posts--skin-cards elementor-grid">
+				<article class="elementor-post elementor-grid-item post-10057437 post type-post status-publish format-standard has-post-thumbnail hentry category-articles tag-clip tag-computer-vision tag-computer-vision-gpt tag-dall-e tag-glide tag-gpt-3-for-computer-vision tag-image-gpt tag-large-model-for-computer-vision">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/will-we-see-gpt-3-moment-for-computer-vision/" data-wpel-link="internal"><div class="elementor-post__thumbnail"><img width="768" height="432" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/GPTCV_AIM-768x432.jpg" class="attachment-medium_large size-medium_large" alt="computer vision" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/GPTCV_AIM-768x432.jpg 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/GPTCV_AIM-1024x576.jpg 1024w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/GPTCV_AIM-1536x864.jpg 1536w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/GPTCV_AIM-150x84.jpg 150w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/GPTCV_AIM.jpg 1600w " sizes="(max-width: 768px) 100vw, 768px" /></div></a>
+				<div class="elementor-post__badge">Opinions</div>
+				<div class="elementor-post__avatar">
+			<img alt='Shraddha Goled' src='https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/11/Shraddha-Goled-128x128.jpg' srcset='https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/11/Shraddha-Goled-256x256.jpg 2x ' class='avatar avatar-128 photo' height='128' width='128' loading='lazy'/>		</div>
+				<div class="elementor-post__text">
+				<h5 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/will-we-see-gpt-3-moment-for-computer-vision/" data-wpel-link="internal">
+				Will we see GPT-3 moment for computer vision?			</a>
+		</h5>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			03/01/2022		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-10057047 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-computer-vision tag-multi-weight-support tag-pytorch tag-torchvision">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/pytorch-introduced-new-multi-weight-support-api-for-torchvision/" data-wpel-link="internal"><div class="elementor-post__thumbnail"><img width="768" height="432" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Pytorch-768x432.jpeg" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Pytorch-768x432.jpeg 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Pytorch-1024x576.jpeg 1024w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Pytorch-150x84.jpeg 150w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/Pytorch.jpeg 1280w " sizes="(max-width: 768px) 100vw, 768px" /></div></a>
+				<div class="elementor-post__badge">News</div>
+				<div class="elementor-post__avatar">
+			<img alt='Poornima Nataraj' src='https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/avatar_user_96500_1640264206-128x128.jpg' srcset='https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/avatar_user_96500_1640264206.jpg 2x ' class='avatar avatar-128 photo' height='128' width='128' loading='lazy'/>		</div>
+				<div class="elementor-post__text">
+				<h5 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/pytorch-introduced-new-multi-weight-support-api-for-torchvision/" data-wpel-link="internal">
+				Pytorch Introduced New Multi-Weight Support API for TorchVision			</a>
+		</h5>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			24/12/2021		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-10057019 post type-post status-publish format-standard has-post-thumbnail hentry category-articles tag-ai tag-computer-vision tag-deep-learning tag-ego4d tag-habitat-2-0 tag-meta tag-meta-ai tag-nlp tag-robotics">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/interesting-algorithms-released-by-meta-ai-in-2021/" data-wpel-link="internal"><div class="elementor-post__thumbnail"><img width="768" height="432" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/meta-768x432.jpg" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/meta-768x432.jpg 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/meta-1024x576.jpg 1024w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/meta-1536x864.jpg 1536w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/meta-150x84.jpg 150w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/meta.jpg 1920w " sizes="(max-width: 768px) 100vw, 768px" /></div></a>
+				<div class="elementor-post__badge">Opinions</div>
+				<div class="elementor-post__avatar">
+			<img alt='Sreejani Bhattacharyya' src='https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/10/Employees-10-128x128.jpg' srcset='https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/10/Employees-10-256x256.jpg 2x ' class='avatar avatar-128 photo' height='128' width='128' loading='lazy'/>		</div>
+				<div class="elementor-post__text">
+				<h5 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/interesting-algorithms-released-by-meta-ai-in-2021/" data-wpel-link="internal">
+				Interesting Algorithms Released By Meta AI In 2021			</a>
+		</h5>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			24/12/2021		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-10056819 post type-post status-publish format-standard has-post-thumbnail hentry category-developers_corner tag-analytics-2 tag-artificial-intelligence tag-computer-vision tag-computer-vision-neural-network tag-data-science tag-data-scientist tag-deep-learning tag-machine-learning tag-metaformers tag-metaformers-in-computer-vision tag-python tag-transformers">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/an-introductory-guide-to-metaformers-in-computer-vision/" data-wpel-link="internal"><div class="elementor-post__thumbnail"><img width="768" height="432" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/087a5abf-9d01-42ea-9f57-5585b4846751-1-768x432.jpg" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/087a5abf-9d01-42ea-9f57-5585b4846751-1-768x432.jpg 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/087a5abf-9d01-42ea-9f57-5585b4846751-1-1024x576.jpg 1024w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/087a5abf-9d01-42ea-9f57-5585b4846751-1-1536x864.jpg 1536w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/087a5abf-9d01-42ea-9f57-5585b4846751-1-150x84.jpg 150w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/087a5abf-9d01-42ea-9f57-5585b4846751-1.jpg 1600w " sizes="(max-width: 768px) 100vw, 768px" /></div></a>
+				<div class="elementor-post__badge">Developers Corner</div>
+				<div class="elementor-post__avatar">
+			<img alt='Yugesh Verma' src='https://secure.gravatar.com/avatar/6bcc9ab9cdf7c59aec5f8fe57a46cf00?s=128&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6bcc9ab9cdf7c59aec5f8fe57a46cf00?s=256&#038;d=mm&#038;r=g 2x' class='avatar avatar-128 photo' height='128' width='128' loading='lazy'/>		</div>
+				<div class="elementor-post__text">
+				<h5 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/an-introductory-guide-to-metaformers-in-computer-vision/" data-wpel-link="internal">
+				An Introductory Guide to MetaFormers in Computer Vision			</a>
+		</h5>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			22/12/2021		</span>
+				</div>
+					</div>
+		</article>
+				<article class="elementor-post elementor-grid-item post-10056798 post type-post status-publish format-standard has-post-thumbnail hentry category-developers_corner tag-artificial-intelligence tag-computer-vision tag-filtering tag-image-filtering tag-image-processing tag-machine-learning">
+			<div class="elementor-post__card">
+				<a class="elementor-post__thumbnail__link" href="https://analyticsindiamag.com/all-you-need-to-know-about-guided-image-filtering/" data-wpel-link="internal"><div class="elementor-post__thumbnail"><img width="768" height="432" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/vb-banner-1_11zon-768x432.jpg" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/vb-banner-1_11zon-768x432.jpg 768w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/vb-banner-1_11zon-1024x576.jpg 1024w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/vb-banner-1_11zon-1536x864.jpg 1536w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/vb-banner-1_11zon-150x84.jpg 150w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/vb-banner-1_11zon.jpg 1920w " sizes="(max-width: 768px) 100vw, 768px" /></div></a>
+				<div class="elementor-post__badge">Developers Corner</div>
+				<div class="elementor-post__avatar">
+			<img alt='Basawanyya Hiremath' src='https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/avatar_user_96497_1640161562-128x128.jpg' srcset='https://149695847.v2.pressablecdn.com/wp-content/uploads/2021/12/avatar_user_96497_1640161562.jpg 2x ' class='avatar avatar-128 photo' height='128' width='128' loading='lazy'/>		</div>
+				<div class="elementor-post__text">
+				<h5 class="elementor-post__title">
+			<a href="https://analyticsindiamag.com/all-you-need-to-know-about-guided-image-filtering/" data-wpel-link="internal">
+				All You Need to Know About Guided Image Filtering			</a>
+		</h5>
+				</div>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-date">
+			22/12/2021		</span>
+				</div>
+					</div>
+		</article>
+				</div>
+
+
+		
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-23d45d60 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="23d45d60" data-element_type="section">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-459ccc99" data-id="459ccc99" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6239c868 elementor-widget elementor-widget-heading" data-id="6239c868" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">3 Ways to Join our Community</h4>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-28ad1db1 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28ad1db1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2ce4b4db" data-id="2ce4b4db" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6c7beb96 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="6c7beb96" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.3 - 28-12-2021 */
+.elementor-widget-image-box .elementor-image-box-content{width:100%}@media (min-width:768px){.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{text-align:right;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper{text-align:left;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.elementor-widget-image-box.elementor-position-top .elementor-image-box-img{margin:auto}.elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-image-box.elementor-vertical-align-bottom .elementor-image-box-wrapper{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}}@media (max-width:767px){.elementor-widget-image-box .elementor-image-box-img{margin-left:auto!important;margin-right:auto!important;margin-bottom:15px}}.elementor-widget-image-box .elementor-image-box-img{display:inline-block}.elementor-widget-image-box .elementor-image-box-title a{color:inherit}.elementor-widget-image-box .elementor-image-box-wrapper{text-align:center}.elementor-widget-image-box .elementor-image-box-description{margin:0}</style><div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Discord Server</h3><p class="elementor-image-box-description">Stay Connected with a larger ecosystem of data science and ML Professionals</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-40cf951c elementor-align-center elementor-widget elementor-widget-button" data-id="40cf951c" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://discord.gg/Sbtj3jdeAz" class="elementor-button-link elementor-button elementor-size-sm" role="button" data-wpel-link="external" target="_blank" rel="nofollow">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Join Discord Community</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-667d228c" data-id="667d228c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-bfc187d elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="bfc187d" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Telegram Channel</h3><p class="elementor-image-box-description">Discover special offers, top stories, upcoming events, and more.
+
+</p></div></div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-70af5842 elementor-align-center elementor-widget elementor-widget-button" data-id="70af5842" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://t.me/+TrPapV7gnN2Oz1AZ" class="elementor-button-link elementor-button elementor-size-sm" role="button" data-wpel-link="external" target="_blank" rel="nofollow">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Join Telegram</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1216dac" data-id="1216dac" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3c0f5589 elementor-widget elementor-widget-heading" data-id="3c0f5589" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Subscribe to our newsletter</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1a7a57d9 elementor-widget elementor-widget-heading" data-id="1a7a57d9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Get the latest updates from AIM</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-39403225 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="39403225" data-element_type="widget" data-settings="{&quot;button_width&quot;:&quot;20&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.5.2 - 28-11-2021 */
+.elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons{-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}.e-form__indicators{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:nowrap;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators,.e-form__indicators__indicator{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.e-form__indicators__indicator{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-preferred-size:0;flex-basis:0;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;-webkit-transition:width .1s linear;-o-transition:width .1s linear;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-inactive object,.e-form__indicators__indicator--state-inactive svg{fill:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active object,.e-form__indicators__indicator--state-active svg{fill:var(--e-form-steps-indicator-active-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator--state-completed object,.e-form__indicators__indicator--state-completed svg{fill:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img,.e-form__indicators__indicator__icon object,.e-form__indicators__indicator__icon svg{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__icon .e-font-icon-svg{height:1em}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#c2cbd2}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-field-type-recaptcha_v3 .grecaptcha-badge{z-index:1}.elementor-button .elementor-form-spinner{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.elementor-form .elementor-button>span{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}.elementor-form .elementor-button svg{height:auto}.elementor-form .elementor-button .e-font-icon-svg{height:1em}</style>		<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="10056299"/>
+			<input type="hidden" name="form_id" value="39403225"/>
+			<input type="hidden" name="referer_title" value="Why Is Computer Vision Hard To Implement?" />
+
+							<input type="hidden" name="queried_id" value="10003537"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-75 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-20 e-form__buttons">
+					<button type="submit" class="elementor-button elementor-size-md">
+						<span >
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">Subscribe</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				</div>
+		</div>
+				<div data-elementor-type="footer" data-elementor-id="10056274" class="elementor elementor-10056274 elementor-location-footer" data-elementor-settings="[]">
+		<div class="elementor-section-wrap">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-6b6a5b01 elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-section-height-default" data-id="6b6a5b01" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-4bc56a36" data-id="4bc56a36" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-338fc0e7 elementor-widget elementor-widget-heading" data-id="338fc0e7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">Our mission is to bring about better-informed and more conscious decisions about technology through authoritative, influential, and trustworthy journalism.</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f288c3a elementor-widget elementor-widget-heading" data-id="f288c3a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Shape The Future of AI</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-182e5cf7 elementor-widget elementor-widget-button" data-id="182e5cf7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://analyticsindiamag.mystagingwebsite.com/contact-us/" class="elementor-button-link elementor-button elementor-size-sm" role="button" data-wpel-link="external" target="_blank" rel="nofollow">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">CONTACT US ⟶</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-65a5cd4a" data-id="65a5cd4a" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap">
+									</div>
+		</div>
+							</div>
+		</section>
+				<footer class="elementor-section elementor-top-section elementor-element elementor-element-1368e352 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1368e352" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-7a26824a" data-id="7a26824a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-35c4587c elementor-widget elementor-widget-image" data-id="35c4587c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://analyticsindiamag.com" data-wpel-link="internal">
+							<img width="200" height="200" src="https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo.png 200w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo-150x150.png 150w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo-180x180.png 180w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo-90x90.png 90w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo-20x20.png 20w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo-185x185.png 185w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo-50x50.png 50w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo-96x96.png 96w , https://149695847.v2.pressablecdn.com/wp-content/uploads/2016/12/AIM-Logo-48x48.png 48w " sizes="(max-width: 200px) 100vw, 200px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-2c0219d elementor-shape-square elementor-grid-4 e-grid-align-left elementor-widget elementor-widget-social-icons" data-id="2c0219d" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.3 - 28-12-2021 */
+.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);-webkit-box-pack:var(--justify-content,center);-ms-flex-pack:var(--justify-content,center);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));height:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;background-color:#818a91;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#818a91}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{-webkit-border-radius:10%;border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{-webkit-border-radius:50%;border-radius:50%}</style>		<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-1e6414a" href="https://www.facebook.com/AnalyticsIndiaMagazine/" target="_blank" data-wpel-link="external" rel="nofollow">
+						<span class="elementor-screen-only">Facebook</span>
+						<svg class="e-font-icon-svg e-fab-facebook"><use xlink:href="#fab-facebook" /></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-dc278bd" href="https://twitter.com/@analyticsindiam" target="_blank" data-wpel-link="external" rel="nofollow">
+						<span class="elementor-screen-only">Twitter</span>
+						<svg class="e-font-icon-svg e-fab-twitter"><use xlink:href="#fab-twitter" /></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-64bf194" href="https://www.youtube.com/channel/UCAlwrsgeJavG1vw9qSFOUmA" target="_blank" data-wpel-link="external" rel="nofollow">
+						<span class="elementor-screen-only">Youtube</span>
+						<svg class="e-font-icon-svg e-fab-youtube"><use xlink:href="#fab-youtube" /></svg>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-31dcd9f2" data-id="31dcd9f2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-87df0c0 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="87df0c0" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-87df0c0" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8426"><a href="https://analyticsindiamag.com/about/" class="elementor-item" data-wpel-link="internal">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8427"><a href="https://analyticsindiamag.com/advertise-with-us/" class="elementor-item" data-wpel-link="internal">Advertise</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10019912"><a href="https://analyticsindiamagazine.substack.com/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Weekly Newsletter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8433"><a href="https://analyticsindiamag.com/write-for-us/" class="elementor-item" data-wpel-link="internal">Write for us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012130"><a href="https://www.linkedin.com/jobs/search/?currentJobId=2595617641&#038;f_C=10283931&#038;f_TPR=r604800&#038;geoId=92000000" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Careers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8429"><a href="https://analyticsindiamag.com/contact-us/" class="elementor-item" data-wpel-link="internal">Contact Us</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-87df0c0" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8426"><a href="https://analyticsindiamag.com/about/" class="elementor-item" tabindex="-1" data-wpel-link="internal">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8427"><a href="https://analyticsindiamag.com/advertise-with-us/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Advertise</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10019912"><a href="https://analyticsindiamagazine.substack.com/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Weekly Newsletter</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8433"><a href="https://analyticsindiamag.com/write-for-us/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Write for us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012130"><a href="https://www.linkedin.com/jobs/search/?currentJobId=2595617641&#038;f_C=10283931&#038;f_TPR=r604800&#038;geoId=92000000" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Careers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8429"><a href="https://analyticsindiamag.com/contact-us/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Contact Us</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-610157b elementor-widget elementor-widget-heading" data-id="610157b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">rankings & lists</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1779f0a elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="1779f0a" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-1779f0a" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10012110"><a href="https://analyticsindiamag.com/category/academic-rankings/" class="elementor-item" data-wpel-link="internal">Academic Rankings</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012113"><a href="https://analyticsindiamag.com/50-best-firms-in-india-for-data-scientists-to-work-for-2021/" class="elementor-item" data-wpel-link="internal">Best Firms To Work For</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012114"><a href="https://analyticsindiamag.com/?s=most+influential&#038;category=470" class="elementor-item" data-wpel-link="internal">Top Leaders</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012111"><a href="https://analyticsindiamag.com/?s=top+10+data+scientists&#038;category=470" class="elementor-item" data-wpel-link="internal">Data Scientists</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012112"><a href="https://analyticsindiamag.com/?s=10+Emerging+Analytics+Startups&#038;category=470" class="elementor-item" data-wpel-link="internal">Emerging Startups</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012115"><a href="https://analyticsindiamag.com/?s=top+trends&#038;category=470" class="elementor-item" data-wpel-link="internal">Trends</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10040461"><a href="https://analyticsindiamag.com/pema/" class="elementor-item" data-wpel-link="internal">PeMa Quadrant</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-1779f0a" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10012110"><a href="https://analyticsindiamag.com/category/academic-rankings/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Academic Rankings</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012113"><a href="https://analyticsindiamag.com/50-best-firms-in-india-for-data-scientists-to-work-for-2021/" class="elementor-item" tabindex="-1" data-wpel-link="internal">Best Firms To Work For</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012114"><a href="https://analyticsindiamag.com/?s=most+influential&#038;category=470" class="elementor-item" tabindex="-1" data-wpel-link="internal">Top Leaders</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012111"><a href="https://analyticsindiamag.com/?s=top+10+data+scientists&#038;category=470" class="elementor-item" tabindex="-1" data-wpel-link="internal">Data Scientists</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012112"><a href="https://analyticsindiamag.com/?s=10+Emerging+Analytics+Startups&#038;category=470" class="elementor-item" tabindex="-1" data-wpel-link="internal">Emerging Startups</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012115"><a href="https://analyticsindiamag.com/?s=top+trends&#038;category=470" class="elementor-item" tabindex="-1" data-wpel-link="internal">Trends</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10040461"><a href="https://analyticsindiamag.com/pema/" class="elementor-item" tabindex="-1" data-wpel-link="internal">PeMa Quadrant</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-2bd99dcd" data-id="2bd99dcd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5f60d7c0 elementor-widget elementor-widget-heading" data-id="5f60d7c0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">OUR brands</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b309584 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="b309584" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-b309584" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012096"><a href="https://aimresearch.ai/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">AIM Research</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10017493"><a href="https://recruits.analyticsindiamag.com/" class="elementor-item" data-wpel-link="internal">AIM Recruits</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050293"><a href="https://councils.analyticsindiamag.com/" class="elementor-item" data-wpel-link="internal">AIM Leaders Council</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-b309584" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012096"><a href="https://aimresearch.ai/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">AIM Research</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10017493"><a href="https://recruits.analyticsindiamag.com/" class="elementor-item" tabindex="-1" data-wpel-link="internal">AIM Recruits</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050293"><a href="https://councils.analyticsindiamag.com/" class="elementor-item" tabindex="-1" data-wpel-link="internal">AIM Leaders Council</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6b61769 elementor-widget elementor-widget-heading" data-id="6b61769" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">VIDEOS</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-fe2557e elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="fe2557e" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-fe2557e" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012102"><a href="https://www.youtube.com/watch?v=7pvGJbzTTWk&#038;list=PL9Kc1zSa46OzMfx0I1SJZOGpN_p371vbd" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Documentary &#8211; The Transition Cost</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012103"><a href="https://www.youtube.com/watch?v=WQbKblRKQsk&#038;list=PL9Kc1zSa46OxzJqQEJa-qI55CtLZxFl2v" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Web Series &#8211; The Dating Scientists</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012104"><a href="https://www.youtube.com/watch?v=gvZfaeVVbGE&#038;list=PL9Kc1zSa46OwqKv91j8W6vZ-V5DucIU4Y" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Podcasts &#8211; Simulated Reality</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012105"><a href="https://www.youtube.com/watch?v=oQDZMdeyzgw&#038;list=PL9Kc1zSa46Oyc1zxdtKwCO2SU7hlHDTvl" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Analytics India Guru</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012106"><a href="https://www.youtube.com/watch?v=Q7d1UR_PRGg&#038;list=PL9Kc1zSa46OxcRA2Y3OFCFwjQgK3ibF9z" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">The Pretentious Geek</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012107"><a href="https://www.youtube.com/watch?v=Z3Z7Riw1G9o&#038;list=PL9Kc1zSa46Oyv8tAFzC22cuLXNRUZvXAG" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Deeper Insights with Leaders</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012108"><a href="https://www.youtube.com/watch?v=AfsqH5EzjIg&#038;list=PL9Kc1zSa46OzOCjo2YUNym6thlDD0F0zc" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Curiosum &#8211; AI Storytelling</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-fe2557e" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012102"><a href="https://www.youtube.com/watch?v=7pvGJbzTTWk&#038;list=PL9Kc1zSa46OzMfx0I1SJZOGpN_p371vbd" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Documentary &#8211; The Transition Cost</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012103"><a href="https://www.youtube.com/watch?v=WQbKblRKQsk&#038;list=PL9Kc1zSa46OxzJqQEJa-qI55CtLZxFl2v" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Web Series &#8211; The Dating Scientists</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012104"><a href="https://www.youtube.com/watch?v=gvZfaeVVbGE&#038;list=PL9Kc1zSa46OwqKv91j8W6vZ-V5DucIU4Y" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Podcasts &#8211; Simulated Reality</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012105"><a href="https://www.youtube.com/watch?v=oQDZMdeyzgw&#038;list=PL9Kc1zSa46Oyc1zxdtKwCO2SU7hlHDTvl" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Analytics India Guru</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012106"><a href="https://www.youtube.com/watch?v=Q7d1UR_PRGg&#038;list=PL9Kc1zSa46OxcRA2Y3OFCFwjQgK3ibF9z" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">The Pretentious Geek</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012107"><a href="https://www.youtube.com/watch?v=Z3Z7Riw1G9o&#038;list=PL9Kc1zSa46Oyv8tAFzC22cuLXNRUZvXAG" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Deeper Insights with Leaders</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012108"><a href="https://www.youtube.com/watch?v=AfsqH5EzjIg&#038;list=PL9Kc1zSa46OzOCjo2YUNym6thlDD0F0zc" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Curiosum &#8211; AI Storytelling</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-21d2440 elementor-widget elementor-widget-heading" data-id="21d2440" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">our conferences</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c5a25dc elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="c5a25dc" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-c5a25dc" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012097"><a href="https://www.analyticsindiasummit.com/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Cypher</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012098"><a href="https://themachinecon.com/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">The MachineCon</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012099"><a href="http://mlds.analyticsindiasummit.com/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Machine Learning Developers Summit</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012100"><a href="https://rising.analyticsindiasummit.com/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">The Rising</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012101"><a href="https://plugin.analyticsindiasummit.com/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">plugin</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-c5a25dc" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012097"><a href="https://www.analyticsindiasummit.com/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Cypher</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012098"><a href="https://themachinecon.com/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">The MachineCon</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012099"><a href="http://mlds.analyticsindiasummit.com/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Machine Learning Developers Summit</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012100"><a href="https://rising.analyticsindiasummit.com/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">The Rising</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012101"><a href="https://plugin.analyticsindiasummit.com/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">plugin</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-3754ca08" data-id="3754ca08" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-506cf7b elementor-widget elementor-widget-heading" data-id="506cf7b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">AWARDS</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-585d3ea elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="585d3ea" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-585d3ea" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012151"><a href="https://themachinecon.com/awards/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Analytics100</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012152"><a href="https://mlds.analyticsindiasummit.com/awards/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">40 under 40 Data Scientists</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012153"><a href="https://www.analyticsindiasummit.com/about/awards/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Data Science Excellence</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012154"><a href="https://rising.analyticsindiasummit.com/awards/" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Women in AI Leadership</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-585d3ea" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012151"><a href="https://themachinecon.com/awards/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Analytics100</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012152"><a href="https://mlds.analyticsindiasummit.com/awards/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">40 under 40 Data Scientists</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012153"><a href="https://www.analyticsindiasummit.com/about/awards/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Data Science Excellence</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10012154"><a href="https://rising.analyticsindiasummit.com/awards/" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Women in AI Leadership</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f9ac98e elementor-widget elementor-widget-heading" data-id="f9ac98e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">EVENTS</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-91e88c7 elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="91e88c7" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-91e88c7" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10012202"><a href="https://analyticsindiamag.com/our-events/aim-custom-events/" class="elementor-item" data-wpel-link="internal">AIM Custom Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10012710"><a href="https://analyticsindiamag.com/our-events/aim-virtual/" class="elementor-item" data-wpel-link="internal">AIM Virtual</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-91e88c7" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10012202"><a href="https://analyticsindiamag.com/our-events/aim-custom-events/" class="elementor-item" tabindex="-1" data-wpel-link="internal">AIM Custom Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10012710"><a href="https://analyticsindiamag.com/our-events/aim-virtual/" class="elementor-item" tabindex="-1" data-wpel-link="internal">AIM Virtual</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-80b3a8f elementor-widget elementor-widget-heading" data-id="80b3a8f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">machinehack</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ae2448d elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="ae2448d" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot;&gt;&lt;use xlink:href=\&quot;#fas-caret-down\&quot; \/&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-ae2448d" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050295"><a href="https://machinehack.com/hackathon" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Hackathons</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050297"><a href="https://machinehack.com/jobs" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Job Portal</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050296"><a href="https://machinehack.com/mocks" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Mock Assessments</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050298"><a href="https://machinehack.com/practices" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Practice ML</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050300"><a href="https://machinehack.com/bootcamp" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Bootcamp</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050294"><a href="https://machinehack.com/enterprise" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">For Enterprises</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050301"><a href="https://machinehack.com/global-rankings" class="elementor-item" data-wpel-link="external" target="_blank" rel="nofollow">Leaderboard</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"><use xlink:href="#eicon-menu-bar" /></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close"><use xlink:href="#eicon-close" /></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true">
+				<ul id="menu-2-ae2448d" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050295"><a href="https://machinehack.com/hackathon" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Hackathons</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050297"><a href="https://machinehack.com/jobs" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Job Portal</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050296"><a href="https://machinehack.com/mocks" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Mock Assessments</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050298"><a href="https://machinehack.com/practices" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Practice ML</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050300"><a href="https://machinehack.com/bootcamp" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Bootcamp</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050294"><a href="https://machinehack.com/enterprise" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">For Enterprises</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10050301"><a href="https://machinehack.com/global-rankings" class="elementor-item" tabindex="-1" data-wpel-link="external" target="_blank" rel="nofollow">Leaderboard</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-7ff1ebb6" data-id="7ff1ebb6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-458954d1 elementor-widget elementor-widget-heading" data-id="458954d1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Newsletter</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-29486cd6 elementor-widget elementor-widget-text-editor" data-id="29486cd6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.5.3 - 28-12-2021 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Stay up to date with our latest news, receive exclusive deals, and more.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-1441ac4b elementor-widget elementor-widget-form" data-id="1441ac4b" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+					<form class="elementor-form" method="post" name="Newsletter Form">
+			<input type="hidden" name="post_id" value="10056274"/>
+			<input type="hidden" name="form_id" value="1441ac4b"/>
+			<input type="hidden" name="referer_title" value="Why Is Computer Vision Hard To Implement?" />
+
+							<input type="hidden" name="queried_id" value="10003537"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Enter Your Email Address 							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" placeholder="Enter Your Email Address " required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button type="submit" class="elementor-button elementor-size-sm">
+						<span >
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">subscribe ⟶</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</footer>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-30120e50 elementor-section-full_width elementor-section-height-min-height elementor-section-content-middle elementor-section-height-default elementor-section-items-middle" data-id="30120e50" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-51aab8aa" data-id="51aab8aa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6cd769e5 elementor-widget elementor-widget-heading" data-id="6cd769e5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">© Analytics India Magazine Pvt Ltd 2022</p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				</div>
+		</div>
+		
+<svg xmlns="http://www.w3.org/2000/svg" id="e-font-icon-svg-symbols" style="display: none;"><symbol id="eicon-menu-bar" viewBox="0 0 1000 1000"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></symbol><symbol id="eicon-close" viewBox="0 0 1000 1000"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></symbol><symbol id="fas-caret-down" viewBox="0 0 320 512"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></symbol><symbol id="fas-search" viewBox="0 0 512 512"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></symbol><symbol id="fas-tags" viewBox="0 0 640 512"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></symbol><symbol id="far-user-circle" viewBox="0 0 496 512"><path d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z"></path></symbol><symbol id="fab-facebook" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></symbol><symbol id="fab-twitter" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></symbol><symbol id="fab-linkedin" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></symbol><symbol id="fab-reddit" viewBox="0 0 512 512"><path d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"></path></symbol><symbol id="fab-pinterest" viewBox="0 0 496 512"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></symbol><symbol id="fab-telegram" viewBox="0 0 496 512"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></symbol><symbol id="fab-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></symbol><symbol id="fas-envelope" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></symbol><symbol id="fab-youtube" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></symbol></svg><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: SAS -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,81091,'fhjzyn9efvrazm3tzrxs');</script>
+<!-- / OptinMonster -->		<script type="text/javascript">
+		var fhjzyn9efvrazm3tzrxs_shortcode = true;		</script>
+		<link rel='stylesheet' id='e-animations-css'  href='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.5.3' type='text/css' media='all' />
+<script>(function(d){var s=d.createElement("script");s.type="text/javascript";s.src="https://a.omappapi.com/app/js/api.min.js";s.async=true;s.id="omapi-script";d.getElementsByTagName("head")[0].appendChild(s);})(document);</script><script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-includes/js/wp-embed.min.js?ver=5.8.2' id='wp-embed-js'></script>
+<script type='text/javascript' src='https://cdn.onesignal.com/sdks/OneSignalSDK.js?ver=5.8.2' async='async' id='remote_sdk-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1' id='smartmenus-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/optinmonster/assets/js/helper.js?ver=2.6.9' id='optinmonster-wp-helper-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.5.2' id='elementor-pro-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.5.3' id='elementor-webpack-runtime-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.5.3' id='elementor-frontend-modules-js'></script>
+<script type='text/javascript' id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/analyticsindiamag.com\/wp-admin\/admin-ajax.php","nonce":"0036e9a128","urls":{"assets":"https:\/\/analyticsindiamag.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/analyticsindiamag.com\/wp-json\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},
+"facebook_sdk":{"lang":"en_US","app_id":"224833517628762"},"lottie":{"defaultAnimationUrl":"https:\/\/analyticsindiamag.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.5.2' id='elementor-pro-frontend-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},
+"version":"3.5.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"e_font_icon_svg":true,"form-submissions":true},"urls":{"assets":"https:\/\/analyticsindiamag.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":10003537,"title":"Why%20Is%20Computer%20Vision%20Hard%20To%20Implement%3F%20%E2%80%93%20Analytics%20India%20Magazine","excerpt":"","featuredImage":"https:\/\/analyticsindiamag.com\/wp-content\/uploads\/2020\/07\/computer-vision-implement.jpg"}};
+</script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.5.3' id='elementor-frontend-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.5.2' id='pro-elements-handlers-js'></script>
+<script type='text/javascript' src='https://149695847.v2.pressablecdn.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.5.2' id='e-sticky-js'></script>
+		<script type="text/javascript">
+			(function() {
+			var t   = document.createElement( 'script' );
+			t.type  = 'text/javascript';
+			t.async = true;
+			t.id    = 'gauges-tracker';
+			t.setAttribute( 'data-site-id', '61c0aa6feaa9a71f45083877' );
+			t.src = '//secure.gaug.es/track.js';
+			var s = document.getElementsByTagName( 'script' )[0];
+			s.parentNode.insertBefore( t, s );
+			})();
+		</script>
+				<script type="text/javascript">var omapi_localized = {
+			ajax: 'https://analyticsindiamag.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1',
+			nonce: '3d0361de44',
+			slugs: 
+			{"fhjzyn9efvrazm3tzrxs":{"slug":"fhjzyn9efvrazm3tzrxs","mailpoet":false}}		};</script>
+				<script type="text/javascript">var omapi_data = {"wc_cart":[],"object_id":10003537,"object_key":"post","object_type":"post","term_ids":[6,7717,116368,118858,118114]};</script>
+		
+</body>
+</html>
+<!--
+	generated in 0.621 seconds
+	181017 bytes batcached for 300 seconds
+-->
