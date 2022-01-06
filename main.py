@@ -65,14 +65,30 @@ def execute():
     Prosecution.
     """)
 def setting():
-    st.title("option")
-    box_name = st.text_input("hight")
+    st.title("OPTION")
+    c1, c2, c3 = st.columns(3)
 
-    box = st.checkbox('name')
+    height = c1.text_input("Hight")
+
+    width = c2.text_input("width")
+    
+      
+
+    fps = c3.text_input("fps")
+
+    save_btn = st.button('Save Settings')
+
+    if save_btn:
+        with open('settings.json', 'r') as f:
+            config = json.load(f)
+            config = {"width": width, "height": height, "fps": fps}
+
+            with open('settings.json', 'w') as f:
+                json.dump(config, f)
+            st.success('Settings Saved...')
 
 
-
-
+print(config)
 
 options = ['Project Introduction','Execution','setting']
 selOption = sidebar.selectbox("Select an Option", options)
