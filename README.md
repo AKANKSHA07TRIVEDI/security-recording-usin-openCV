@@ -1,2 +1,2 @@
 #  SECURITY RECORDING USING OPENCV
-Markup :("SCREEN1.png")
+Markup :("security-recording-usin-openCV/SCREEN1.png")
