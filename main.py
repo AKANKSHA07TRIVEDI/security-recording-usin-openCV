@@ -20,12 +20,16 @@ sidebar.title('User Options')
 def introduction():
     st.title("COMPUTER VISION ")
     st.markdown("""
-     Computer vision is an interdisciplinary scientific
-     field that deals with how computers can gain high
-     level understanding from digital images or vedios.
+     As computer vision has become a part of our daily life.
+      Using smartphones features like face recognition is all a part of computer vision. 
+      In this paper, we will talk aboutCV or Computer Vision which is preferably used to
+       read and display a video stream in real time through which one can access the web camera
+        and using machine learning one can let their system learn through data sent by user or 
+        through datasets which is easily available on the internet and then system trains itself. After training part it is ready to solve the real life problems
         
     """)
     st.image('cv.jpg', use_column_width=True)
+    
     st.title("OPENCV")
     st.markdown("""
     OpenCV-Python is a library of Python bindings designed to solve computer vision problems.
