@@ -8,5 +8,10 @@
        interface with programing languages like Python, MATLAB, Ruby and others as well. 
        Along with Numpy [6] and Python image  processing  (shape  & color  detection) can  be performed at ease)
     ![opencv](https://user-images.githubusercontent.com/92586138/148653552-4003e789-c434-438b-9788-01588cf39a36.jpg)
-# LIBERARY![image](https://user-images.githubusercontent.com/92586138/148653737-37f401f5-768f-4377-b857-932581b634e4.png)
-
+# LIBERARY
+  * Numpy
+  * cv
+#Numpy
+To install Numpy in python use this command in cmd(commandprompt):
+      pip install Numpy           
+![image](https://user-images.githubusercontent.com/92586138/148653896-7a20a4d4-07be-4e29-8de6-62efbc26ec5a.png)
