@@ -12,6 +12,6 @@
   * Numpy
   * cv
 #Numpy
-To install Numpy in python use this command in cmd(commandprompt):
-      pip install Numpy           
-![image](https://user-images.githubusercontent.com/92586138/148653896-7a20a4d4-07be-4e29-8de6-62efbc26ec5a.png)
+(To install Numpy in python use this command in cmd(commandprompt):
+      pip install Numpy    )       
+
