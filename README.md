@@ -7,3 +7,4 @@
        It  can be easily  run on  operating systems Windows and Linux. This  library can  be easily 
        interface with programing languages like Python, MATLAB, Ruby and others as well. 
        Along with Numpy [6] and Python image  processing  (shape  & color  detection) can  be performed at ease)
+(security-recording-usin-openCV/opencv.jpg)
