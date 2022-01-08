@@ -30,21 +30,25 @@ def introduction():
     """)
     st.image('cv.jpg', use_column_width=True)
     
+    
     st.title("OPENCV")
     st.markdown("""
-    OpenCV-Python is a library of Python bindings designed to solve computer vision problems.
-    OpenCV-Python makes use of Numpy, which is a highly optimized library for numerical operations with a MATLAB-style syntax.
-    All the OpenCV array structures are converted to and from Numpy arrays. 
-
+    As computer vision has become a part of our daily life.
+      Using smartphones features like face recognition is all a part of computer vision. 
+      In this paper, we will talk aboutCV or Computer Vision which is preferably used to
+       read and display a video stream in real time through which one can access the web camera
+        and using machine learning one can let their system learn through data sent by user or 
+        through datasets which is easily available on the internet and then system trains itself. After training part it is ready to solve the real life problems
+        
     """)
+
+    
     st.image('opencv.jpg', use_column_width=True)
     st.image_size=(300,300)
     c1, c2 = st.columns(2)
 
     c1.header("FEATURE")
-    st.markdown(""" 1.Open-source. The library is open-source which means that the source code is publicly available. 
-                  
-    """)
+   
     st.markdown("""2.Fast Speed. Since the OpenCV library is originally written in C/C++, it is fast and efficient.
                    
     """)
