@@ -2,7 +2,7 @@ from numpy import complex128
 import streamlit as st
 from recorder import recordVideo
 import json
-
+import os
 
 st.title("SECURITY RECORDING USING OPENCV")
 st.image('hero.jpg', use_column_width=True)
@@ -62,9 +62,14 @@ def execute():
     video_name = st.text_input("Enter video name")
     record = st.checkbox('Record Video')
     if video_name and record:
-        recordVideo(video_name, config)
+        recordVideo(video_name.replace(' ', '_'), config)
         sidebar = st.sidebar
     st.title("USAGE")
+    st.markdown("""This system  has  a  wide range  of  uses in  various  fields, 
+    such  as banking,  forensic  department,  etc…  The  reason  this system  is  
+    quiet  useful  is  due  to  the  fact  that  it  is  highly compact  and  it 
+     provides  face  detection  and  recognition  at once.
+""")
     st.markdown("""Peace of mind.
     """)
     st.markdown("""Deterrent and crime prevention.
@@ -96,9 +101,18 @@ def setting():
             st.success('Settings Saved...')
 
 
+def viewVideos():
+
+    videos = os.listdir('recordedVideos')
+    selVideo = st.selectbox('Select Video to View', videos)
+
+    if selVideo:
+        st.video(f'recordedVideos/{selVideo}', format="video/mp4")
+        st.video('video.mkv')
+
 print(config)
 
-options = ['Project Introduction','Execution','setting']
+options = ['Project Introduction','Execution','setting', 'View Recorded Videos']
 selOption = sidebar.selectbox("Select an Option", options)
 
 if selOption == options[0]:
@@ -107,6 +121,8 @@ elif selOption == options[1]:
     execute()
 elif selOption == options[2]:
     setting()
+elif selOption == options[3]:
+    viewVideos()
 
 
 
