@@ -12,7 +12,7 @@
   * Numpy
   * cv2
   
-#Numpy
+ # Numpy
 
 
 (To install Numpy in python use this command in cmd(commandprompt):
