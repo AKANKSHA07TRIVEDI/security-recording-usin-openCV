@@ -13,6 +13,8 @@
   * cv2
   
 #Numpy
+
+
 (To install Numpy in python use this command in cmd(commandprompt):
       pip install Numpy    )       
 
