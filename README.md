@@ -10,7 +10,8 @@
     ![opencv](https://user-images.githubusercontent.com/92586138/148653552-4003e789-c434-438b-9788-01588cf39a36.jpg)
 # LIBERARY
   * Numpy
-  * cv
+  * cv2
+  
 #Numpy
 (To install Numpy in python use this command in cmd(commandprompt):
       pip install Numpy    )       
